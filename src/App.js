@@ -26,9 +26,8 @@ class App extends React.Component {
     const apiUrl = process.env.REACT_APP_API_URL
     const resp = await fetch(`${apiUrl}/books`)
     const jsonBooks = await resp.json()
-
     this.setState({
-      books: jsonBooks.data,
+      books: jsonBooks,
     })
   }
 }
