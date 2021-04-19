@@ -13,7 +13,7 @@ class App extends React.Component {
           <h1>Books in the catalogue</h1>
           {this.state.books.map((book, index) => (
             <div key={index}>
-              <img src={book.img} style={{ width: "200px" }}></img>
+              <img alt="" src={book.img} style={{ width: "200px" }}></img>
               <span>{book.title}</span>
             </div>
           ))}
