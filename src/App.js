@@ -23,7 +23,7 @@ class App extends React.Component {
   }
 
   componentDidMount = async () => {
-    const apiUrl = process.env.REACT_APP_API_URL
+    const apiUrl = process.env.REACT_APP_BE_URL
     const resp = await fetch(`${apiUrl}/books`)
     const jsonBooks = await resp.json()
     this.setState({
